@@ -1,0 +1,583 @@
+/* Layout */
+
+body {
+    font:normal 12px/1.6em Arial, Helvetica, sans-serif;
+	color:#2a3845;
+	background-color: 	#bfff00;
+	padding: 0;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 460px;
+}
+
+p {
+	padding: 0;
+	color: #1C0B07;
+	font-size: 1.2em;
+}
+
+em {
+	color: 	#0000CD;
+
+}
+
+#wrapper {
+
+	 width: auto;
+
+	
+}
+
+#nav {
+	background:#06a;
+	text-align:right;
+	color:#f6dde3;
+	font-size: 1.5em;
+	padding-bottom: 20px;
+	float: left;
+	margin-left: 0px;
+	padding-top: 10px;
+}
+
+#header {
+	float: left;
+	position: fixed;
+	padding-top: 0px;
+	
+	
+}
+
+#bg {
+	height:36px;
+    background:url('http://img840.imageshack.us/img840/9886/87926428.gif') repeat-x;
+}
+
+#main-content {
+	float: left;
+	margin: 0 auto;
+	
+}
+
+#main-image {
+	width: auto;
+	height: auto;
+	margin-left:auto;
+	
+}
+
+#left-column {
+	width: auto;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#right-column {
+	width: auto;
+	float: left;
+	margin-left: auto;
+	
+	
+}
+
+.sidebar {
+    background:url('http://img404.imageshack.us/img404/3092/shadowh.jpg') no-repeat top;
+    width: 400px;
+
+    
+	
+}
+
+#footer {
+	position: relative;
+    margin-top: -180px; /* negative value of footer height */
+    height: 180px;
+    clear:both;
+    color: :white;
+}
+
+/* Global Styling */
+
+a:visited, a:link {
+	color:#273C83;
+	text-decoration:underline;
+	background:none;
+}
+
+a:hover {
+	color:#a43b55;
+	text-decoration:none;
+	background:#0B0B0A;
+}
+
+h1 {
+	color:#F5F5F5;
+	margin:0 0 10px;
+	padding-bottom:10px;
+	font:normal 17px Georgia, serif;
+	border-bottom: thin solid ;
+}
+
+h2 {
+	color:#F0FFFF;
+	margin:5px 0 10px;
+	padding-bottom:5px;
+	font:normal 17px Georgia, serif;
+	border-bottom:10px solid #efece7;
+	background-color: #000000;
+	float: center;
+}
+
+h3 {
+	color:#7a2e40;
+	margin:10px 0;
+	padding-bottom:0px;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	/**background-color: #FFFFFF;*/
+	
+}
+
+ul {
+	padding:0;
+	margin:0 0 0 17px;
+   list-style:square url('http://img525.imageshack.us/img525/1890/bulletr.gif');
+}
+
+.box {
+	background:#27252E;
+	padding:15px;
+	font-size: 1.2em;
+	
+}
+.box > p {
+	color: white;
+}
+.box > ul > li {
+	color : white;
+}
+.box > ul > li > a {
+	color: blue;
+}
+.contacts {
+	background-color: #090A09;
+}
+.contacts > p {
+	color: white;
+}
+.contacts > form {
+	color: yellow;
+}
+
+.quotes{
+	background: #7FFF00;
+}
+
+.gallery {
+
+	float: center;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#slider {
+	 margin: 80px auto;
+	 position: relative;
+	 width: 240px;
+	 height: 240px;
+	 padding: 10px;
+	 box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slider >div {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
+div.vertical-line{
+  width: 1px; /* Line width */
+  background-color: black; /* Line color */
+  height: 100%; /* Override in-line if you want specific height. */
+  float: left; /* Causes the line to float to left of content. 
+    You can instead use position:absolute or display:inline-block
+    if this fits better with your design */
+}
+
+#nav a {
+	margin: 0 50px;
+	-webkit-transition: all 1s ease;
+}
+
+#nav a:visited, #nav a:link {
+	text-decoration:none;
+	color:#f6dde3;
+}
+
+#nav a:hover {
+	text-decoration:underline;
+	color:#f6dde3;
+}
+
+#logo {
+	margin-bottom:20px;
+	font:normal 18px Georgia, serif;
+	color:#4B0082;
+	text-align:center;
+	background-color: #90EE90;
+}
+.about {
+
+	float: right;
+}
+
+.img {
+	float: left;
+
+}
+
+.section {
+	color: #0F0604;
+	background-color: #635A58;
+	color:#F5F5F5;
+	font:normal 18px Georgia, serif;
+}
+.section > ul > li {
+	font-size: 0em;
+}
+
+
+.company {
+	color: black;
+}
+
+.title {
+	color: black;
+}
+.title > ul  > li {
+	font-size: 350%;
+}
+
+.activity {
+	color: #080F47;
+}
+.bio {
+	background-color: 	#000000;
+}
+.bio > p {
+	color: white;
+}
+.bio > h1 {
+	color: #A5E618;
+}
+.bio > h3 {
+	color: #A5E618;
+}
+.bio a {
+	color: yellow;
+}
+
+.resume {
+	background-color: #D7AD4D;
+}
+.courses {
+	font-size: 110%;
+}
+.skills {
+	font-size: 110%;
+}
+.roles {
+	font-size: 110%;
+}
+.business > p{
+	color: white;
+}
+.finance > p {
+	color: #93B727;
+}
+.cs > p {
+	color: #DCF187;
+}
+.cs >ul >li {
+	color: white;
+	font-size: 1.2em;
+}
+.farmers > p {
+	color: #311746;
+}
+.resumeImage >img {
+	text-align: right;
+	width: 1215;
+}
+img{
+	float: left;
+	margin-right: 15px;
+
+}
+
+li {
+
+	color: #101111;
+
+}
+figcaption {
+	display: block;
+}
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+	left: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size 
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {
+  	font-size: 11px;
+  	float: center
+  }
+}
+*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;
+   }
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: center;
+    
+}
+.dropbtn {
+	font-size: 200%;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+.animateResume {
+	color: white;
+	width: 500px;
+    height: 60px;
+    background-color: #7419A2;
+    font-weight: normal;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+.animateProjects {
+	color: white;
+	width: 500px;
+    height: 60px;
+    background-color: #7419A2;
+    font-weight: normal;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+.animateContacts {
+	color: white;
+	width: 500px;
+    height: 60px;
+    background-color: #7419A2;
+    font-weight: normal;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+
+.come-in {
+    -webkit-transform: translateY(150px);
+    -webkit-animation: come-in 1s ease forwards;
+    -webkit-animation-delay: 0.2s;
+    transform: translateY(150px);
+    animation: come-in 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.come-in:nth-child(odd) {
+    -webkit-animation-duration: 0.6s; // here
+}
+
+.already-visible {
+    -webkit-transform: translateY(0);
+    -webkit-animation: none;
+    transform: translateY(0);
+    animation: none;
+}
+@-webkit-keyframes come-in {
+    to {
+        -webkit-transform: translateY(0);   // here
+    }
+} 
+
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
+}
