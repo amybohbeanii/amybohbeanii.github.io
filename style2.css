@@ -1,0 +1,431 @@
+/* Navbar */
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+body {
+  min-width:1050px;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+}
+
+
+#about-section {
+    width: 100%;
+    height: 100%;
+}
+
+#education {
+    width: 100%;
+    height: 100%;
+}
+
+
+#awards {
+    width: 100%;
+    height: 100%;
+}
+
+#work-experience {
+    width: 100%;
+    height: 100%;
+}
+
+
+#organizations {
+    width: 100%;
+    height: 100%;
+}
+
+#projects {
+    width: 100%;
+    height: 100%;
+}
+
+#contact {
+    width: 100%;
+    height: 100%;
+}
+
+#navbar-triangle{
+    background-color: #7E7E7E;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 100px;
+    height: 85px;
+    padding-top: 0;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: #b2497d;
+	color: white;
+	cursor: pointer; 
+	transition: background .5s;  
+}
+
+/* Rows and Text */
+
+.row-black{
+	border-top: black;
+	border-bottom: black;
+	border-style: solid;
+	border-width: 5px;
+	height: 20px;
+}
+
+.top-buffer {
+	margin:40px;
+}
+
+.header-text{
+	font-size: 120px;
+	margin-top: 120px;
+}
+
+.about-text {
+	text-align: center;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.contact {
+	height: 100px;
+}
+
+/* Images */
+
+.jessica-img{
+	height:700px;
+	margin-top: 50px;
+}
+
+.info-img {
+	height: 200px;
+	width: 200px;
+	z-index: 1;
+}
+
+.education-img {
+	height: 200px;
+}
+
+.project-img {
+	height: 150px;
+	width: 250px;
+    border-width: 1px;
+	border-radius: 5px;
+	border-color: black;
+	border-style: solid;
+}
+
+.nowknow-img{
+	height: 150px;
+	width: 250px;
+	border-radius: 5px;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+
+}
+
+/* Circular Images */
+
+.circular-gs {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/gs.jpg");
+    background-size: 100% 100%;
+    background-position: 0px 25px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    }
+
+.circular-ms {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/ms.png");
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    }
+
+.circular-mit {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/mit.png");
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    }
+
+.circular-ist {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/ist.jpeg");
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    }
+
+.circular-thetech {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/thetech.png");
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    }
+
+.circular-codecademy {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/codecademy.png");
+    background-size: 100% 70%;
+    background-position: 0px 25px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    }
+
+.circular-copenhagen {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/copenhagen.jpg");
+    background-size: 140% 140%;
+    background-position: 0px 0px 0px 0px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    }
+
+.circular-swe {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/swe.png") no-repeat;
+    background-color: white;
+    background-size: 190% 100%;
+    background-position: -60px 0px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    }
+
+.circular-seg {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/seg.gif") no-repeat;
+    background-color: white;
+    background-size: 100% 85%;
+    background-position: 0px 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    }
+
+.circular-valedictorian {
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url("../img/val.jpg");
+	background-size: 140% 140%;
+	background-position: 0px 0px 0px 0px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+
+.circular-cis {
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url("../img/cis.jpg");
+	background-size: 140% 140%;
+	background-position: 0px 0px 0px 0px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular-google {
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url("../img/google.jpg") no-repeat;
+    background-color: white;
+	background-size: 99% 55%;
+	background-position: 0px 35px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular-microsoft {
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url("../img/microsoft.jpg") no-repeat;
+    background-color: white;
+	background-size: 70% 90%;
+	background-position: 25px 10px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular-mckinsey {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/mckinsey.jpg") no-repeat;
+    background-color: white;
+    background-size:100% 15%;
+    background-position: 0px 65px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular-brown {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/brown.png");
+    background-size: 85% 93%;
+    background-position: 10px 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular-bain {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/bainandco.png");
+    background-size: 100% 93%;
+    background-position: 7px 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular-palantir {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/palantir.jpg") no-repeat;
+    background-color: black;
+    background-size: 100% 100%;
+    background-position: 3px 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular-adobe {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("../img/adobe.png") no-repeat;
+    background-color: black;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+
