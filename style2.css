@@ -392,7 +392,7 @@ body {
     -moz-border-radius: 150px;
     background: url("headfirst.png");
     background-size: 100% 100%;
-    background-position: 7px 7px;
+    background-position: 0px 0px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
