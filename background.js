@@ -14,8 +14,8 @@ $(document).ready(function(){
 	addTriangleTo(document.getElementById('education'),'Spectral');	
 	addTriangleTo(document.getElementById('work-experience'),'GnBu');	
 	addTriangleTo(document.getElementById('projects'),'PuOr');
-	addTriangleTo(document.getElementById('about'),'PuOr');	
-	addTriangleTo(document.getElementById('travelss'),'PuOr');
+	addTriangleTo(document.getElementById('about'),'cool');	
+	addTriangleTo(document.getElementById('travels'),'try');
 	addTriangleTo(document.getElementById('publications'),'PuOr');	
 	
 	
