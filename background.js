@@ -13,7 +13,12 @@ $(document).ready(function(){
 	addTriangleTo(document.getElementById('home'),'PRGn');
 	addTriangleTo(document.getElementById('education'),'Spectral');	
 	addTriangleTo(document.getElementById('work-experience'),'GnBu');	
-	addTriangleTo(document.getElementById('projects'),'PuOr');	
+	addTriangleTo(document.getElementById('projects'),'PuOr');
+	addTriangleTo(document.getElementById('about'),'PuOr');	
+	addTriangleTo(document.getElementById('awards'),'PuOr');
+	addTriangleTo(document.getElementById('contact'),'PuOr');	
+	
+	
 })
 
 
