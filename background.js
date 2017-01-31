@@ -15,8 +15,8 @@ $(document).ready(function(){
 	addTriangleTo(document.getElementById('work-experience'),'GnBu');	
 	addTriangleTo(document.getElementById('projects'),'PuOr');
 	addTriangleTo(document.getElementById('about'),'PuOr');	
-	addTriangleTo(document.getElementById('awards'),'PuOr');
-	addTriangleTo(document.getElementById('contact'),'PuOr');	
+	addTriangleTo(document.getElementById('travelss'),'PuOr');
+	addTriangleTo(document.getElementById('publications'),'PuOr');	
 	
 	
 })
