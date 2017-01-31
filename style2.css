@@ -398,11 +398,11 @@ body {
 }
 
 .circular-palantir {
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
     background: url("paris.jpg") no-repeat;
     background-color: black;
     background-size: 100% 100%;
@@ -413,11 +413,11 @@ body {
 }
 
 .circular-adobe {
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
     background: url("japan.jpg") no-repeat;
     background-color: black;
     background-size: 100% 100%;
