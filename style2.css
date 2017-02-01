@@ -403,7 +403,7 @@ body {
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-    background: url("paris.jpg");
+    background: url("paris.png");
     background-color: black;
     background-size: 100% 100%;
     background-position: 3px 5px;
@@ -418,13 +418,13 @@ body {
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-    background: url("japan.jpg");
+    background: url("japan.png");
     background-color: black;
     background-size: 100% 100%;
     background-position: 0px 0px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 
