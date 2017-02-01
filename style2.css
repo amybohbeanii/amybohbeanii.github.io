@@ -398,33 +398,33 @@ body {
 }
 
 .circular-palantir {
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
     background: url("paris.jpg") no-repeat;
     background-color: black;
     background-size: 100% 100%;
     background-position: 3px 5px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0);
 }
 
 .circular-adobe {
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
     background: url("japan.jpg") no-repeat;
     background-color: black;
     background-size: 100% 100%;
     background-position: 0px 0px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0);
 }
 
 
