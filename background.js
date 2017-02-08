@@ -11,7 +11,7 @@ $(document).ready(function(){
 	}
 
 	addTriangleTo(document.getElementById('home'),'GnBu');
-//	addTriangleTo(document.getElementById('education'),'PuOr');	
+	addTriangleTo(document.getElementById('education'),'GnBu');	
 	addTriangleTo(document.getElementById('work-experience'),'GnBu');	
 	addTriangleTo(document.getElementById('projects'),'GnBu');
 	addTriangleTo(document.getElementById('aboutpage'),'GnBu');	
