@@ -11,10 +11,10 @@ $(document).ready(function(){
 	}
 
 	addTriangleTo(document.getElementById('home'),'PRGn');
-	addTriangleTo(document.getElementById('education'),'Spectral');	
+	addTriangleTo(document.getElementById('education'),'PuOr');	
 	addTriangleTo(document.getElementById('work-experience'),'GnBu');	
 	addTriangleTo(document.getElementById('projects'),'PuOr');
-	addTriangleTo(document.getElementById('aboutpage'),'GnBu');	
+	addTriangleTo(document.getElementById('aboutpage'),'PuOr');	
 	addTriangleTo(document.getElementById('travels'),'PuOr');
 	addTriangleTo(document.getElementById('publications'),'PuOr');	
 	
