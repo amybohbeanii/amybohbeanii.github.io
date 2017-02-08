@@ -10,12 +10,12 @@ $(document).ready(function(){
 	    target.style['background-image'] = 'url(' + pattern.png() + ')';
 	}
 
-	addTriangleTo(document.getElementById('home'),'PRGn');
+	addTriangleTo(document.getElementById('home'),'GnBu');
 //	addTriangleTo(document.getElementById('education'),'PuOr');	
 	addTriangleTo(document.getElementById('work-experience'),'GnBu');	
-	addTriangleTo(document.getElementById('projects'),'PuOr');
-	addTriangleTo(document.getElementById('aboutpage'),'PuOr');	
-	addTriangleTo(document.getElementById('travels'),'PuOr');
+	addTriangleTo(document.getElementById('projects'),'GnBu');
+	addTriangleTo(document.getElementById('aboutpage'),'GnBu');	
+	addTriangleTo(document.getElementById('travels'),'GnBu');
 	addTriangleTo(document.getElementById('publications'),'GnBu');	
 	
 	
