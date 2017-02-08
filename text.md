@@ -1,4 +1,24 @@
-     	<h5>Classes Taken in Other Subjects:</h5>
+	<!--About-->
+    <div id="aboutpage" style="padding-top:80px; padding-bottom:50px;">
+        <center><h1 id="about" style="font-size:400%; font-family: Arial; font-weight: bold;">About</h1></center>
+    <div class="row bottom-buffer top-buffer">
+	    <div class="appear">
+	        <div class="col-md-3"><center><img class="info-img" src="gz.jpg"><br><strong>I lived in Guangzhou</strong></center></div>
+	        <div class="col-md-3"><center><img class="info-img" src="atl.jpg"><br><strong>I grew up in Atlanta</strong></center></div>
+	        <div class="col-md-3"><center><img class="info-img" src="boston.jpeg"><br><strong>I am attending university in Boston</strong></center></div>
+	        <div class="col-md-3"><center><img class="info-img" src="london.jpeg"><br><strong>I studied abroad in London</strong></center></div>
+	    </div>
+    </div>
+    <div class="container about-text">
+    	<p>
+As a Business and Computer Science student at Brandeis, I am enthusiastic about using technology towards making businesses more efficient, profitable, and innovative. I have interests in tech entrepreneurship and product management and have completed a diverse range of courses in four different universities, and have both technical and non-technical work experience in both areas. I have balanced my school work with my passion to travel and was able to visit 20 european cities while I studied abroad. 
+
+I am currently dedicating my time in finding a full time job in one of these cities 1) Atlanta or 2) Los Angeles 3) New York City 4) Burbank My goal is to find a career that can blend together my knowledge from my two majors. </p>
+    </div>
+</div>    
+    
+    
+    <h5>Classes Taken in Other Subjects:</h5>
 		<h6>IGS 10A Introduction to International and Global Studies</h6>
 		<h6>CHIN 30A Intermediate Chinese</h6>
 		<h6>EL 94A Experiential Learning Practicum: Global Perspectives</h6>
