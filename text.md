@@ -1,4 +1,18 @@
-        <div class="row top-buffer">
+     	<h5>Classes Taken in Other Subjects:</h5>
+		<h6>IGS 10A Introduction to International and Global Studies</h6>
+		<h6>CHIN 30A Intermediate Chinese</h6>
+		<h6>EL 94A Experiential Learning Practicum: Global Perspectives</h6>
+		<h6>CHIN 40B Advanced Intermediate Chinese</h6>
+		<h6>UWS 29A University Writing Seminar: Art Stripped Bare</h6>
+		<h6>ANTH 70A Business, Culture, and Society</h6>
+		<h6>PE 16A Golf</h6>
+		<h6>ANTH 111A Aging in Cross-Cultural Perspective</h6>
+		<h6>PE Senior Year: Future Forward</h6>
+		<h6>JOUR 145A Opinion Writing</h6>
+     
+     
+     
+     <div class="row top-buffer">
             <div class="col-md-2"></div>
     		<div class="col-md-4"><img class="education-img" src="olin.png"></div>
     		<div class="col-md-6">
