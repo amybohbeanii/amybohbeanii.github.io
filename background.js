@@ -10,10 +10,10 @@ $(document).ready(function(){
 	    target.style['background-image'] = 'url(' + pattern.png() + ')';
 	}
 
-	addTriangleTo(document.getElementById('home'),'GnBu');
-	addTriangleTo(document.getElementById('education'),'GnBu');	
-	addTriangleTo(document.getElementById('work-experience'),'GnBu');	
-	addTriangleTo(document.getElementById('project'),'GnBu');
+	addTriangleTo(document.getElementById('home'),'PRGn');
+	addTriangleTo(document.getElementById('education'),'PRGn');	
+	addTriangleTo(document.getElementById('work-experience'),'PRGn');	
+	addTriangleTo(document.getElementById('project'),'PRGn');
 
 	
 	
