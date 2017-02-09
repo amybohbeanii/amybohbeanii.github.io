@@ -1,14 +1,18 @@
 /* Navbar */
-
-h1 {
-    font-family: 'Pacifico', cursive;
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
 }
 
 body {
-	margin: 0;
-    height: 100%;	
-  min-width:1050px;
-	color: black;	
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
 }
 
 #home {
