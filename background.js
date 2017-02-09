@@ -13,10 +13,8 @@ $(document).ready(function(){
 	addTriangleTo(document.getElementById('home'),'GnBu');
 	addTriangleTo(document.getElementById('education'),'GnBu');	
 	addTriangleTo(document.getElementById('work-experience'),'GnBu');	
-	addTriangleTo(document.getElementById('projects'),'GnBu');
-	addTriangleTo(document.getElementById('aboutpage'),'GnBu');	
-	addTriangleTo(document.getElementById('travels'),'GnBu');
-	addTriangleTo(document.getElementById('publications'),'GnBu');	
+	addTriangleTo(document.getElementById('project'),'GnBu');
+
 	
 	
 })
