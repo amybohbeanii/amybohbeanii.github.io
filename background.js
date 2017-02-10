@@ -2,8 +2,8 @@ $(document).ready(function(){
 	function addTriangleTo(target,inputColor) {
 	    var dimensions = target.getClientRects()[0];
 	    var pattern = Trianglify({
-	        width: screen.width,
-	        height: screen.height,
+	        width: dimensions.width,
+	        height: dimensions.height,
 			x_colors: inputColor,
 			y_colors: 'match_x'
 	    });
