@@ -165,37 +165,6 @@ h1 {
 }
 
 /* Circular Images */
-
-.circular-gs {
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url("../img/gs.jpg");
-    background-size: 100% 100%;
-    background-position: 0px 25px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-
-    }
-
-.circular-ms {
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url("../img/ms.png");
-    background-size: 100% 100%;
-    background-position: 0px 0px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-
-    }
-
 .circular-towel {
     width: 150px;
     height: 150px;
