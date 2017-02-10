@@ -89,7 +89,7 @@ h1 {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-	background-color: #b2497d;
+	background-color: #2f24c9;
 	color: white;
 	cursor: pointer; 
 	transition: background .5s;  
