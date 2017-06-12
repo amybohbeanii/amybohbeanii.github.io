@@ -10,11 +10,11 @@ $(document).ready(function(){
 	    target.style['background-image'] = 'url(' + pattern.png() + ')';
 	}
 
-	addTriangleTo(document.getElementById('home'),'YlOrBr');
-	addTriangleTo(document.getElementById('education'),'YlOrBr');	
-	addTriangleTo(document.getElementById('work-experience'),'YlOrBr');	
-	addTriangleTo(document.getElementById('schoolprojects'),'YlOrBr');
-	addTriangleTo(document.getElementById('sideprojects'),'YlOrBr');
+///	addTriangleTo(document.getElementById('home'),'YlOrBr');
+//	addTriangleTo(document.getElementById('education'),'YlOrBr');	
+//	addTriangleTo(document.getElementById('work-experience'),'YlOrBr');	
+//	addTriangleTo(document.getElementById('schoolprojects'),'YlOrBr');
+//	addTriangleTo(document.getElementById('sideprojects'),'YlOrBr');
 	
 	
 })
