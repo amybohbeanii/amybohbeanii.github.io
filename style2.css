@@ -1,63 +1,123 @@
-/* Navbar */
-html {
-   margin: 0px;
-   height: 100%;
-   width: 100%;
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
-body {
-   margin: 0px;
-   min-height: 100%;
-   width: 100%;
+body, html {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1500px;
+
+ /* padding: 0 5%; if i want wider sides */
+  font-size: 100%;
+  font-family: "Noto Sans", sans-serif;
+  color: #eee9dc; /*tinted white*/
+  background: #244a96; 
 }
 
 h1 {
     font-family: 'Pacifico', cursive;
+    text-align: center;
 }
 
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    margin: 3em 0 0 0;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a {
+    color: green; /*conversion elements should be green*/
+}
+
+p {
+    color: black;
+}
+/*about me: social*/
+ul.social-buttons { list-style: none; margin: 0; padding: 0; }
+ul.social-buttons li { display: inline-block; margin-right: 10px; }
+ul.social-buttons li:last-child { margin-right: 0; }
+.social-btn { width: 40px; 
+              height: 40px; 
+              display: inline-block; 
+              color: #000; 
+              font-size: 25px; 
+              line-height: 40px; 
+              text-align: center; }
+.social-btn:hover, .social-btn:focus { 
+    color: #dae23b; 
+    outline: 0;
+    border: none;
+}
+.social { 
+    margin-top: 25px;
+    margin-bottom: 25px
+}
+
+/*need id for background.js*/
 #home {
     width: 100%;
     height: 100%;
 }
 
-
-#about-section {
-    width: 100%;
-    height: 100%;
+/*parallax scrolling*/
+.background1, .background2, .background3, .background4, .background5 {
+    position: relative;
+    opacity: 0.90;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#education {
-    width: 100%;
-    height: 100%;
+.background1 {
+    background-image: url("images/riomaggiore.png");
+    min-height: 100%;
 }
 
-
-#awards {
-    width: 100%;
-    height: 100%;
+.background2 {
+    background-image: url("images/france.png");
+    min-height: 400px;
 }
 
-#work-experience {
-    width: 100%;
-    height: 100%;
+.background3 {
+    background-image: url("images/riomaggiore2.png");
+    min-height: 400px;
 }
 
-
-#organizations {
-    width: 100%;
-    height: 100%;
+.background4 {
+    background-image: url("images/swan.png");
+    min-height: 400px;
 }
 
-#projects {
-    width: 100%;
-    height: 100%;
+.background5 {
+    background-image: url("images/riomaggiore3.png");
+    min-height: 400px;
 }
 
-#contact {
+/*amy wu*/
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
     width: 100%;
-    height: 100%;
+    text-align: center;
+    color: #000;
 }
 
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+/*navbar*/
 #navbar-triangle{
     background-color: #7E7E7E;
 }
@@ -95,8 +155,61 @@ h1 {
 	transition: background .5s;  
 }
 
-/* Rows and Text */
+/* bootstrap hover dropdown*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+/* Rows and Text */
 .row-black{
 	border-top: black;
 	border-bottom: black;
@@ -105,17 +218,13 @@ h1 {
 	height: 20px;
 }
 
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
 .top-buffer {
 	margin:40px;
-}
-
-.header-text{
-	font-size: 120px;
-	margin-top: 120px;
-}
-
-.about-text {
-	text-align: center;
 }
 
 .vcenter {
@@ -124,27 +233,7 @@ h1 {
     float: none;
 }
 
-.contact {
-	height: 100px;
-}
-
-/* Images */
-
-.amy-img{
-	height:700px;
-	margin-top: 50px;
-}
-
-.info-img {
-	height: 200px;
-	width: 200px;
-	z-index: 1;
-}
-
-.education-img {
-	height: 200px;
-}
-
+/* Square Images */
 .project-img {
 	height: 150px;
 	width: 250px;
@@ -154,38 +243,54 @@ h1 {
 	border-style: solid;
 }
 
-.nowknow-img{
-	height: 150px;
-	width: 250px;
-	border-radius: 5px;
-	border-color: black;
-	border-style: solid;
-	border-width: 1px;
-
-}
-
 /* Circular Images */
-.circular-towel {
+.circular {
     width: 150px;
     height: 150px;
     border-radius: 150px;
     -webkit-border-radius: 150px;
+    -webkit-background-clip: padding-box;
     -moz-border-radius: 150px;
-    background: url("images/Towel.png");
-    background-size: 100% 100%;
-    background-position: 0px 0px;
+    -moz-background-clip: padding;
+    border-radius: 150px;
+    background-clip: padding-box; 
+    background-size: cover;
+    background-position: center center;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
 
-    }
-.circular-headfirst {
+.circ-amy {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 150px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 150px;
+    -moz-background-clip: padding;
+    border-radius: 150px;
+    background-clip: padding-box; 
+    background-size: cover;
+    background-position: center center;
+    vertical-align:middle;
+    text-align: right;
+    position:relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.timelinepicture {
+    margin-top: -50px;
+    top: 50%;
+    left: -340px;
+    font-size: 0.95em;
+    line-height: 20px;
+    position: absolute;
     width: 150px;
     height: 150px;
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-    background: url("images/headfirst.png");
     background-size: 100% 100%;
     background-position: 0px 0px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -193,17 +298,180 @@ h1 {
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
-.circular-brandeis {
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url("images/brandeis.jpg");
-    background-size: 100% 100%;
-    background-position: 0px 0px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+/*timeline*
+/* -------------------------------------
+ * For horizontal version, set the
+ * $vertical variable to false
+ * ------------------------------------- */
+/* -------------------------------------
+ * General Style
+ * ------------------------------------- */
+
+#timeline {
+  list-style: none;
+  margin: 50px 0 30px 300px;
+  padding-left: 30px;
+  border-left: 8px solid #eee9dc;
+}
+#timeline li {
+  margin: 100px 0;
+  position: relative;
+}
+#timeline p {
+  margin: 0 0 12px;
 }
 
+
+
+.date {
+  margin-top: -10px;
+  top: 50%;
+  left: -158px;
+  font-size: 0.95em;
+  line-height: 20px;
+  position: absolute;
+}
+
+.circle {
+  margin-top: -10px;
+  top: 50%;
+  left: -44px;
+  width: 10px;
+  height: 10px;
+  background: #48b379;
+  border: 5px solid #eee9dc;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.content {
+
+  max-height: 80px;
+  padding: 60px 30px 0;
+  border-color: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 2em;
+  position: relative;
+}
+.content:before, .content:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  right: 100%;
+}
+.content:before {
+  border-right-color: inherit;
+  border-width: 20px;
+  top: 50%;
+  margin-top: -20px;
+}
+.content:after {
+  border-right-color: #85e1e2; /*triangle*/
+  border-width: 17px; /*how big the triangle*/
+  top: 50%;
+  margin-top: -17px;
+}
+.content p {
+  max-height: 0;
+  color: transparent;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
+
+label {
+    color: orange;
+  font-size: 1.0em;
+  position: absolute;
+  z-index: 90;
+  cursor: pointer;
+  top: 20px;
+  left: 20px;
+  transition: transform 0.2s linear;
+}
+
+
+.radio {
+  display: none;
+}
+
+.radio:checked + .relative label {
+  cursor: auto;
+  transform: translateX(42px);
+}
+.radio:checked + .relative .circle {
+  background: #f98262;
+}
+.radio:checked ~ .content {
+  max-height: 180px;
+  border-color: #eee9dc;
+  margin-right: 30px;
+  transform: translateX(30px);
+  transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+}
+.radio:checked ~ .content p {
+  max-height: 200px;
+  color: #eee9dc;
+  transition: color 0.3s linear 0.3s;
+}
+
+/* -------------------------------------
+ * mobile phones (vertical version only)
+ * ------------------------------------- */
+@media screen and (max-width: 767px) {
+  #timeline {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  #timeline li {
+    margin: 50px 0;
+  }
+
+  label {
+    width: 85%;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    transform: translateX(18px);
+  }
+
+  .content {
+    padding-top: 45px;
+    border-color: #eee9dc;
+  }
+  .content:before, .content:after {
+    border: solid transparent;
+    bottom: 100%;
+  }
+  .content:before {
+    border-bottom-color: inherit;
+    border-width: 17px;
+    top: -16px;
+    left: 50px;
+    margin-left: -17px;
+  }
+  .content:after {
+    border-bottom-color: #48b379;
+    border-width: 20px;
+    top: -20px;
+    left: 50px;
+    margin-left: -20px;
+  }
+  .content p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .circle, .date {
+    display: none;
+  }
+}
