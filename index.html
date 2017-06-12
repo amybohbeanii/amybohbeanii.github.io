@@ -1,236 +1,607 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!--meta-->
 	<meta charset="UTF-8">
+	<meta name="description" content="Amy Wu's website">
+	<meta name="author" content="Amy Wu">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--for older browsers like IE9/8-->
+
 	<title>Amy Wu</title>
 	<link rel="shortcut icon" href="images/cap.png" type="image/png">
+
+	<!--fonts-->	
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!--bootstrap-->	
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--css-->  	
 	<link href="style2.css" rel="stylesheet" type="text/css">
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.0.1/trianglify.min.js"></script>
-    	<script src="background.js"></script>
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.0.1/trianglify.min.js"></script>
+    <script src="background.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="hover.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="particles.js"></script>
 </head>
 	
 <body>
+	<!--dropdown jquery-->
+	<script>
+	$(document).ready(function(){
+  	$('.dropdown-submenu a.test').on("click", function(e){
+    	$(this).next('ul').toggle();
+    	e.stopPropagation();
+    	e.preventDefault();
+  	});
+	});
+	</script>
 
-<!--Main Section-->	
-<div id="home">
+	<!--Main Section-->	
 	<div class="container">
 	<!--Navbar-->
-		<nav class="navbar navbar-default navbar-fixed-top" id="navbar-triangle">
+		<nav class="navbar navbar-default navbar-fixed-top alt-font" role="navigation" id="navbar-triangle">
 			<div class="container-fluid">
 				<div class="navbar-header">
-			    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			        		<span class="icon-bar"></span>
-			        		<span class="icon-bar"></span>
-			        		<span class="icon-bar"></span>                        
-			      		</button>
-			      		<div class="navbar-brand" href="#"></div>
-			    	</div>
-			    	<div class="collapse navbar-collapse" id="myNavbar"> 
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="assets/amy_resume.pdf" target="_blank" class="social-btn"><i class="fa fa-file"></i></a></li>
-                         			<li><a href="https://www.linkedin.com/in/amy-wu-74254989" target="_blank" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                          			<li><a href="https://github.com/amybohbeanii" target="_blank" class="social-btn"><i class="fa fa-github"></i></a></li>                     
- 						<li><a href="mailto:jiaxuan@brandeis.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-					</ul>
+			    	<div class="navbar-brand" href="#"></div>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar"> 
+					<div class="navbar-header page-scroll">
+				<!--	<img class="navbar-brand page-scroll" src="images/logofinal.png"> -->
+					<a class="navbar-brand page-scroll" href="#home"> Jiaxuan Amy Wu </a>
+					</div>
 					<ul class="nav navbar-nav navbar-right">
-				        	<li><a href="#education">Education</a></li>
-				        	<li><a href="#work-experience">Work Experience</a></li>
-				       	 	<li><a href="#schoolprojects">Projects</a></li>				   
-			      		</ul>
+				    	<li><a href="#education">Education</a></li>
+						<!--bootstrap dropdown-->
+				    	<li class="dropdown">
+				    		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+				        		<span class="caret"></span>
+				        	</a>
+				        	<ul class="dropdown-menu">
+				        		<li><a tabindex="-1" href="#schoolprojects">School Projects</a></li>
+				        		<li><a tabindex="-1" href="#workprojects">Personal Projects</a></li>
+
+          					<!--	<li><a tabindex="-1" href="#personalprojects">Personal Projects</a></li> 
+				       	 		<li class="dropdown-submenu">
+				       	 			<a class="test" tabindex="-1" href="#schoolprojects">School Projects</a> 	
+				       	 			<ul class="dropdown-menu">
+				       	 				<li><a tabindex="-1" href="#">Technical</a></li> 			
+				       	 				<li><a tabindex="-1" href="#">Non-Technical</a></li>
+				       	 				<li><a tabindex="-1" href="#">Writing Assignments</a></li>
+				       	 			</ul>
+				       	 		</li>	-->			       	 				
+          					</ul>
+          				</li>
+          				<li><a href="#work-experience">Work Experience</a></li>
+			    	</ul>
 				</div>
 			</div>
 		</nav>
-	<!--Front page-->
-		<div class="row">
-			<div class="col-md-6"><img src="images/amy.jpg" class="amy-img"></img></div>
-			<div class="col-md-1"></div>
+	</div>
+
+	<!--parallax scrolling-->	
+	<div id= "home" class="background1" style="background-color:#fbeaec">
+		<div class="caption">
+			<span class="border">Amy Wu</h1></span>
 		</div>
 	</div>
-</div>
+	<!--About me-->
+	<div style="color: #777;background-color:#fbeaec;text-align:center;padding:50px 80px;">
+		<h1 class="hvr-underline-from-center" style="text-align:center">About Me</h1>
+ 		<div class="row">
+ 			<div class="circ-amy" style="background-image: url(images/amy.JPG)" ></div>
+ 		</div>
+		<!--icons--> 			
+ 		<div class="row top-buffer">
+			<div class="col-md-6 col-md-offset-3 text-center">
+				<div class="social">
+					<ul class="social-buttons">
+						<li>
+							<a href="https://www.linkedin.com/in/amy-wu-74254989/" target="_blank" class="social-btn">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/amybohbeanii" target="_blank" class="social-btn">
+								<i class="fa fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:jiaxuan@brandeis.edu" class="social-btn">
+								<i class="fa fa-envelope"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1 class="animated fadeInUp" style="text-align:center">Hi! I'm Amy, Recent Grad.</h1>
+		<h3 class="hvr-bubble-float-top" style="color: orange; text-align: justify">	<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i> I'm interested in product management, mobile and web development and ecommerce. I graduated May 21, 2017 at Brandeis University with a Bachelor of Arts in Business and Computer Science. I'm seeking an entry level position relating to product management. I have technical and non-technical work experience through internships. I have learned from various courses at five different university settings. Keep reading to see what I've accomplished during the past four years in college. <i class="fa fa-quote-right fa-3x fa-pull-right fa-border" aria-hidden="true"></i></h1>
 
-<!--Education-->
-<div class="experience" id="education" style="padding-top:80px;">
-    	<center><h1 id="about" style="font-size:400%; font-family: Arial; font-weight: bold;">Education</h1></center>
+
+
+	</div>
+	<!--timeline-->
+	<ul id='timeline'>
+  		<li class='work'>
+    		<input class='radio' id='work5' name='works' type='radio' checked>
+    		<div class="relative">
+      			<label for='work5'>Started education at Brandeis University</label>
+     	 		<span class='date'>August 2013</span>
+      			<span class='circle'></span>
+    		</div>
+    		<div class='content'>
+      			<p>I was a Posse Foundation Finalist, a four-year, full-tuition leadership scaholsrhip for public high school students with extraordinary academic and leadership potential, for Brandeis University. Though I was not a Posse Scholar, I was able to attend Brandeis through the generous Brandeis Family and Friends Scholarship and the Aaron Thal Endowed Scholarship.</p>
+    		</div>
+  		</li>
+  		<li class='work'>
+    		<input class='radio' id='work4' name='works' type='radio'>
+    		<div class="relative">
+      			<label for='work4'>Finished freshman year at Brandeis University</label>
+      			<span class="timelinepicture" style="background-image: url(images/hercampus.png)"></span>
+      			<span class='date'>May 2014</span>
+      			<span class='circle'></span>
+    		</div>
+    		<div class='content'>
+      			<p>During my freshman year I started my business degree while exploring other majors. I got involved with various student clubs like Mountain Club, HerCampus Brandeis, Cooking Club, etc. I got really involved as a writer for HerCampus Brandeis and focused my writing on a series called "Breaking Out of the Brandeis Bubble", which offered advice on exciting events and weekend trips to do off campus.</p>
+    		</div>
+  		</li>
+  		<li class='work'>
+    		<input class='radio' id='work3' name='works' type='radio'>
+    		<div class="relative">
+      			<label for='work3'>Completed two summer internships</label>
+      			<span class='date'>August 2014</span>
+      			<span class='circle'></span>
+    		</div>
+    		<div class='content'>
+      			<p>I interned between Zoo Atlanta and Cobb Chamber of Commerce. At Zoo Atlanta, I was the prospect research and donor relations intern and at Cobb, I was the membership development intern. I provided day to day administration support to the entire advancement/development team. For example, I fundraised prizes, which helped maintain the Chamber's main function to invest in our local businesses and community.</p>
+    		</div>
+  		</li>
+  		<li class='work'>
+    		<input class='radio' id='work2' name='works' type='radio'>
+    		<div class="relative">
+      			<label for='work2'>Finished Sophomore year at Brandeis University</label>
+      			<span class="timelinepicture" style="background-image: url(images/ecaasu.png)"></span>
+      			<span class='date'>May 2015</span>
+      			<span class='circle'></span>
+    		</div>
+    		<div class='content'>
+      			<p>I started my CS major. I obtained a RA position as a 3D modeler and programmer. I was the Sponsorship Chair for ECAASU Boston 2015: New Asian American hosted at Harvard University, which attracted over 1200 attendees nationwide. I worked with the Finance co-directors and managed a team of 6 to make sure our sponsorships and registration revenue was enough to offset the cost of the event.</p>
+    		</div>
+  		</li>
+  		<li class='work'>
+    		<input class='radio' id='work1' name='works' type='radio'>
+    		<div class="relative">
+      			<label for='work1'>Completed summer internship in China</label>
+      			<span class='date'>August 2015</span>
+      			<span class='circle'></span>
+    		</div>
+    		<div class='content'>
+      			<p>I was the business management intern at Holiday's Fashion Industrial Co., LTD, directly assisting the CEO. I learned the ins and outs of the business, attended design meetings, and a trade show for Dollar Tree in Hong Kong. This unique internship offered prospective into how a large retailer works with merchandise vendors.</p>
+    		</div>
+  		</li>
+  		<li class='work'>
+    		<input class='radio' id='work6' name='works' type='radio'>
+    		<div class="relative">
+      			<label for='work6'>Finished Junior year at University College London through study abroad</label>
+      			<span class="timelinepicture" style="background-image: url(images/ucl.png)"></span>
+      			<span class='date'>June 2016</span>
+      			<span class='circle'></span>
+    		</div>
+    		<div class='content'>
+      			<p>I traveled to 20 European countries. I wrote about my experience as part of a work-study program to fund my expenses. I became part of a startup, Headfirst.io. I was the website manager for Cypraea Magazine, a online magazine for Brandeis International Business School students to exhibit their written work covering Economics, Business, and Finance. I got introductory certifications in project management and SQL.</p>
+    		</div>
+  		</li>
+  		<li class='work'>
+    		<input class='radio' id='work7' name='works' type='radio'>
+    		<div class="relative">
+      			<label for='work7'>Traveled to France, Italy, Switzerland with my family </label>
+      			<span class='date'>August 2016</span>
+      			<span class='circle'></span>
+    		</div>
+    		<div class='content'>
+      			<p>I planned a budget friendly trip with 3 other family members across various cities in France, Italy, and Switzerland. My favorite towns/cities were Horgen (Switzerland), Cinque Terre (Italy), and Marseille (France). One picture taken in Cinque Terre is on the Brandeis Wander Magazine's 10th issue front cover. <a href="https://issuu.com/brandeiswander/docs/wander_issue_10_final" target="_blank" class="social-btn">
+								<i class="fa fa-camera"></i>
+							</a>
+				</p>	
+    		</div>
+  		</li>
+  		<li class='work'>
+    		<input class='radio' id='work8' name='works' type='radio'>
+    		<div class="relative">
+      			<label for='work8'>Graduated from Brandeis University</label>	
+      			<span class="timelinepicture" style="background-image: url(images/amy3.png)"></span>
+      			<span class='date'>May 2017</span>
+      			<span class='circle'></span>
+    		</div>
+    		<div class='content'>
+     	 		<p>I cross-registered for one course at Boston University in the fall and for one course at Olin College of Engineering in the spring. I took an online graduate level course at Brandeis in the spring. I completed an independent studies project with Prof. Hickey in the CS department. I learned to be a better writer through one of my favorite courses, Opinion Writing taught by Prof. McNamara, who won a Pulitzer prize for commentary.</p>
+    		</div>
+  		</li>
+	</ul>
+	<div class="background2">
+		<div class="caption">
+			<span class="border" style="background-color:transparent;font-size:25px;color:#f7f7f7;"></span>
+		</div>
+	</div>		
+	<!--Education-->
+	<div class="container-fluid" id="education" style="padding-top:80px; color: black;background-image: url(images/pattern2.png)">
+    	<center><h1 id="about" class="hvr-underline-from-center" style="font-size:400%; font-family: Arial; font-weight: bold;" >Education</h1></center>
         <div class="row top-buffer">
-		<div class="col-md-2"></div>
-		<div class="col-md-4">
-			<div class="text-left">    
-                		<div class="circular-brandeis"></div>
-				<h2>Brandeis University</h2>
-                		<h4>Aug 2013 - May 2017</h4>
-                		<h5>Overall GPA: 3.3/4.0</h5>  
-			</div>	
-            	</div>	
-            	<div class="col-md-4">
-			<h4>Bachelor of Arts in Business</h4>    
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				<div class="text-left">    
+					<div class="circular" style="background-image: url(images/brandeis.jpg)" ></div>
+					<h1 style= "text-align: left">Brandeis University</h1>
+                	<h4>Aug 2013 - May 2017</h4>
+                	<h5>Overall GPA: 3.34/4.0</h5>  
+				</div>	
+            </div>	
+            <div class="col-md-4">
+				<h4>Bachelor of Arts in Business</h4>    
     			<h6>BUS 6A Financial Accounting</h6>
-                	<h6>BUS 10A Capitalist Enterprise</h6>
+                <h6>BUS 10A Capitalist Enterprise</h6>
     			<h6>BUS 20A Organizational Behavior in Business</h6>
-			<h6>BUS 52A Marketing Management</h6>
-			<h6>BUS 153A Marketing Research</h6>
-			<h6>BUS 1B Quantitative Methods in Business</h6>
-			<h6>BUS 172A Operations Management</h6>
-			<h6>BUS 71A Introduction to Finance</h6>		
-            	</div>
+				<h6>BUS 52A Marketing Management</h6>
+				<h6>BUS 153A Marketing Research</h6>
+				<h6>BUS 1B Quantitative Methods in Business</h6>
+				<h6>BUS 172A Operations Management</h6>
+				<h6>BUS 71A Introduction to Finance</h6>		
+            </div>
 	    	<div class="col-md-4">
-			<h4>Bachelor of Arts in Computer Science</h4>
-			<h6>COSI 29A Discrete Structures</h6>
-			<h6>COSI 11A Programming: Java and C</h6>
-			<h6>COSI 12B Advanced Programming Techniques</h6>
-			<h6>COSI 177A Scientific Data Processing</h6>
-			<h6>COSI 2A Introduction to Computers</h6>
-			<h6>COSI 133B Internet and Society</h6>
-			<h6>COSI 65A Introduction to 3D Animation</h6>	
-			<h6>COSI 21A Data Structures</h6>
-			<h6>RSEG 120 Software Development Methodologies *Graduate Level Course taken in Brandeis GPS</h6>
-			<h6>Cross Registration Student at Olin College: Software Systems </h6>	
-			<h6>Cross Registration Student at Boston University: Discrete Mathematics</h6>		
+				<h4>Bachelor of Arts in Computer Science</h4>
+				<h6>COSI 29A Discrete Structures</h6>
+				<h6>COSI 11A Programming: Java and C</h6>
+				<h6>COSI 12B Advanced Programming Techniques</h6>
+				<h6>COSI 177A Scientific Data Processing</h6>
+				<h6>COSI 2A Introduction to Computers</h6>
+				<h6>COSI 133B Internet and Society</h6>
+				<h6>COSI 65A Introduction to 3D Animation</h6>	
+				<h6>COSI 21A Data Structures</h6>
+				<h6>RSEG 120 Software Development Methodologies *Graduate Level Course taken in Brandeis GPS</h6>
+				<h6>Cross Registration Student at Olin College: Software Systems </h6>	
+				<h6>Cross Registration Student at Boston University: Discrete Mathematics</h6>		
 	    	</div>
 	     	<div class="col-md-2"></div>
         </div>
-</div>    
-<div class="row row-black"></div>	
-<!--Work Experience-->
-<div class="experience" id="work-experience" style="padding-top:80px; padding-bottom:50px;">
-	<div class="row bottom-buffer">
-        	<center><h1 style="font-size:400%; font-family: Arial; font-weight: bold;">Work Experience</h1></center>
+   	</div>
+   	<!--parallax-->
+	<div class="background3">
+		<div class="caption">
+			<span class="border" style="background-color:transparent;font-size:25px;color:#f7f7f7;"></span>
+		</div>
+	</div>	
+	<!--Work Experience-->
+	<div class="container-fluid" id="work-experience" style="padding-top:80px; padding-bottom:50px; background-image: url(images/pattern2.png); color: black">
+		<div class="row bottom-buffer">
+        	<center><h1 class="hvr-underline-from-center" style="font-size:400%; font-family: Arial; font-weight: bold;">Work Experience</h1></center>
         </div>
         <div class="row top-buffer">
         	<div class="col-md-2"></div>
-            	<div class="col-md-3">
-                	<div class="circular-towel"></div>
-            	</div>
-            	<div class="col-md-2 vcenter">
-                	<h5><em>Undegraduate Researcher, 3D Modeler, and Programmer</em></h5>
-                	<h4>Brandeis Language Based Spatial Reasoning Lab</h4>
-                	<h6>Waltham, MA</h6>
-                	<h6>March 2015 - May 2017</h6>
-            	</div>
-            	<div class="col-md-3 vcenter">
-                	<p>Work with PhD student to build tools and technologies for semantic encoding; developing simulation system as part of a DARPA project called Communicating with Computers (CwC).</p>
-            	</div>
-            	<div class="col-md-2"></div>
+            <div class="col-md-3">
+            	<div class="circular" style="background-image: url(images/Towel.png)" ></div>
+            </div>
+            <div class="col-md-2 vcenter">
+               	<h5><em>AI | Autonomy | Data | Simulation</em></h5>
+               	<h4>Brandeis Language Based Spatial Reasoning Lab</h4>
+               	<h6>Waltham, MA</h6>
+               	<h6>Undegraduate Researcher: 3D Modeler & Programmer</h6>
+               	<h6>March 2015 - May 2017</h6>
+               	       	<!--icons--> 			
+ 		<div class="row">
+			
+				<div class="social">
+					<ul class="social-buttons">
+						<li>
+							<a href="http://www.lrec-conf.org/proceedings/lrec2016/pdf/1101_Paper.pdf" target="_blank" class="social-btn">
+								<i class="fa fa-file-pdf-o"></i>
+							</a>
+						</li>
+						<li>
+							<a href="http://www.darpa.mil/program/communicating-with-computers" target="_blank" class="social-btn">
+								<i class="fa fa-file-text"></i>
+							</a>
+						</li>
+						<li>
+							<a href="http://www.darpa.mil/news-events/2015-02-20" target="_blank" class="social-btn">
+								<i class="fa fa-file-text"></i>
+							</a>
+						</li>
+						<li>
+							<a href="http://www.aclweb.org/anthology/S/S14/S14-1014.pdf" target="_blank" class="social-btn">
+								<i class="fa fa-file-pdf-o"></i>
+							</a>
+						</li>
+						<li>
+							<a href="http://www.lrec-conf.org/proceedings/lrec2016/workshops/LREC2016Workshop-ISA12proceedings.pdf#page=63" target="_blank" class="social-btn">
+								<i class="fa fa-file-pdf-o"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			
+		</div>
+           	</div>
+           	<div class="col-md-3 vcenter">
+               	<p>The Brandeis CS department and Department of Defense funds LBSR Lab, which a PhD student manages. Tools and technologies are built for semantic encoding; developing simulation system as part of a DARPA project called Communicating with Computers (CwC).</p>
+           	</div>
+           	<div class="col-md-2"></div>
         </div>
         <div class="row top-buffer">
         	<div class="col-md-2"></div>
-            	<div class="col-md-3">
-                	<div class="circular-headfirst"></div>
-            	</div>
-            	<div class="col-md-2 vcenter">
-                	<h5><em>Product Management Intern</em></h5>
-                	<h4>HeadFirst.io</h4>
-                	<h6>London, England</h6>
-                	<h6>Jan 2016 - Jan 2017</h6>
-            	</div>
-            	<div class="col-md-3 vcenter">
-                	<p>Collaborated on implementation of the startup HeadFirst.io while simultaneously worked on client projects. Researched competitors and markets ; the research is being used by startup clients for iteration.</p>
-            	</div>
-            	<div class="col-md-2"></div>
+            <div class="col-md-3">
+               	<img class="circular" src="images/headfirst.png"></img>
+            </div>
+           	<div class="col-md-2 vcenter">
+               	<h5><em>Product Management | Entrepreneurship</em></h5>
+               	<h4>HeadFirst.io</h4>
+               	<h6>London, England</h6>
+               	<h6>Product Management Intern</h6>
+               	<h6>Jan 2016 - Jan 2017</h6>
+               	<!--icons--> 			
+ 		<div class="row">
+			
+				<div class="social">
+					<ul class="social-buttons">
+						<li>
+							<a href="https://www.facebook.com/headfirstSF/" target="_blank" class="social-btn">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/HeadfirstSF" target="_blank" class="social-btn">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/watch?v=yObTH9Hjyr8" target="_blank" class="social-btn">
+								<i class="fa fa-youtube"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company-beta/10861800/" target="_blank" class="social-btn">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			
+		</div>
+           	</div>
+           	<div class="col-md-3 vcenter">
+               	<p>Headfirst.io is a tech startup consulting company that assesses startups and help them plan, design, and build digital products ready for launch.</p>
+           	</div>
+           	<div class="col-md-2"></div>
         </div>
-</div> 
-  	<div class="row row-black" id="about"></div>  
-
+	</div> 
+ 	<!--parallax-->
+	<div class="background5">
+		<div class="caption">
+			<span class="border" style="background-color:transparent;font-size:25px;color:#f7f7f7;"></span>
+		</div>
+	</div>	 
 	<!--School Projects-->
-<div class="experience" id="schoolprojects" style="padding-top:80px; padding-bottom:50px;">
-	<div class="row bottom-buffer">
-        	<center><h1 style="font-size:400%; font-family: Arial; font-weight: bold;">School Projects</h1></center>
+	<div class="container-fluid" id="schoolprojects" style="padding-top:80px; padding-bottom:50px; background-image: url(images/pattern2.png)">
+		<div class="row bottom-buffer">
+        	<center><h1 class="hvr-underline-from-center" style="font-size:400%; font-family: Arial; font-weight: bold;">School Projects</h1></center>
     	</div>
-    	<div class="row top-buffer">
-	        <div class="col-md-4">
-	                <div class="text-center">
-	                	<img class="project-img" src="images/vm_diagram.jpg"></img>
-	                    	<h2>virtmem: Virtual Memory in C</h2>
-	                    	<h4><a href="https://bishiguro.github.io/SoftSysPeskyPintos/">Software Systems 2017 - Virtual Memory</a></h4>
-	                   	<p>Our student team explored implementations of virtual memory by working with processes and algorithms involved in page replacement policies.</p>
-	                </div>
+    	<div class="row">
+	        <div class="col-sm-4">
+	            <div class="text-center">
+	               	<img class="project-img" src="images/vm_diagram.jpg"></img>
+	              	<h2>virtmem: Virtual Memory in C</h2>
+	                <h4><a href="https://bishiguro.github.io/SoftSysPeskyPintos/">Software Systems 2017 - Virtual Memory</a></h4>
+	                <p>Our student team explored implementations of virtual memory by working with processes and algorithms involved in page replacement policies.</p>
+	            </div>
+			</div>
+			<div class="col-sm-4">
+	          	<div class="text-center">
+	                <img class="project-img" src="images/bcurve.png"></img>
+					<h2>Brachistochrone Curve Physics Engine</h2>
+	                <h4><a href="https://tedmcn.github.io/SoftSysDocileDolphins/">Software Systems 2017 - Custom Physics Engine</a></h4>
+	                <p>Our student team explored two properties of the Brachistochrone Curve using our own physics engine.</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+	        	<div class="text-center">
+	                <img class="project-img" src="images/tuvalu.png"></img>
+	                <h2>Tuvalu</h2>
+	                <h4><a href="http://www.tuvalupavilion.com/2016/12/tuvalu-pavilon-at-2017-venice-biennale.html">Independent Studies 2017- Tuvalu Pavilion at 2017 Venice Biennale</a></h4>
+	                <p>Our student team built a website for the Tuvalu pavilion at the 2017 Venice Biennale.</p>
+	            </div>
+	        </div>
+	    </div>
+	    <div class ="row">   	  
+	        <div class="col-sm-4">
+                <div class="text-center">
+                    <img class="project-img" src="images/dsdm.png"></img>
+                    <h2>Project UMass</h2>
+                    <h4><a href="https://drive.google.com/drive/folders/0BwJ84D40V4XdaTdJVUR5UEtwODQ">Software Development Methodologies 2017 - Security Assignment</a></h4>
+                    <p>Our student team reported on the best agile methodology to ensure that a fictitious student health database is secure.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <img class="project-img" src="images/requirements.png"></img>	
+                    <h2>Requirements Analysis on Rail Ticketing System</h2>
+                    <h4><a href="https://drive.google.com/drive/folders/0BwJ84D40V4XdaTdJVUR5UEtwODQ">Software Development Methodologies 2017 - Requirements Analysis Assignment</a></h4>
+                    <p>I wrote about the missing and ambigious user and customer requirements.</p>
+                </div>
+            </div>
+			<div class="col-sm-4">
+	        	<div class="text-center">
+	               	<img class="project-img" src="images/srs.png"></img>
+	                <h2>Project Library: Software Requirements Specifications (SRS) Document</h2>
+	                <h4><a href="https://drive.google.com/drive/folders/0BwJ84D40V4XdaTdJVUR5UEtwODQ">Software Development Methodologies 2017 - Term Project</a></h4>
+	                <p>I made a software requirements specifications (SRS) document that describes the necessary functions and capabilities of a completely integrated automated library system and detail the constraints that it must respect.</p>
+	            </div>
+	        </div>	  
 		</div>
-		<div class="col-md-4">
-	                <div class="text-center">
-	                	<img class="nowknow-img" src="images/bcurve.png"></img>
-			<h2>Brachistochrone Curve Physics Engine</h2>
-	                    	<h4><a href="https://tedmcn.github.io/SoftSysDocileDolphins/">Software Systems 2017 - Custom Physics Engine</a></h4>
-	                   	<p>Our student team explored two properties of the Brachistochrone Curve using our own physics engine. </p>
+		<div class ="row">   	  
+	        <div class="col-sm-4">
+                <div class="text-center">
+                    <img class="project-img" src="images/kraft.png"></img>
+                    <h2>Kraft Heinz Merger</h2>
+                    <h4><a href="https://www.slideshare.net/slideshow/embed_code/key/6aTSbD8ckOBSRZ">Understanding Management - Term Project</a></h4>
+                    <p>Our student team introduces a new product for the Kraft Heinz Merger: World Flavors Seasoning. </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+               	<div class="text-center">
+                  	<img class="project-img" src="images/dyson.png"></img>	
+                   	<h2>Dyson</h2>
+                   	<h4><a href="https://www.slideshare.net/slideshow/embed_code/key/zkA8wYSTOgxyAB">Understanding Management - Term Project</a></h4>
+                    <p>I analyzed Dyson's current strategies and give recommendations on investments and strategies that can result in future profitability and profit growth.</p>
+                </div>
+            </div>
+			<div class="col-sm-4">
+	        	<div class="text-center">
+	                <img class="project-img" src="images/vertex.png"></img>
+	                <h2>Vertex Pharmaceuticals Portfolio Selection</h2>
+	                <h4><a href="https://www.slideshare.net/slideshow/embed_code/key/HjF8QfO7Ski7RG">Project, Program, Portfolio Management - Term Project</a></h4>
+	                <p>Our group presented recommendations on which drugs to fund, partner, license, and keep as future developments.</p>
+	            </div>
+	        </div>	  
+		</div>
+		<div class ="row">   	  
+	        <div class="col-sm-4">
+                <div class="text-center">
+                    <img class="project-img" src="images/wlp.png"></img>
+                    <h2>Women's Lunch Place</h2>
+                    <h4><a href="https://docs.google.com/presentation/d/1a92uFf3Z_b-K2N8f8ulXXci7SMydrdltOZJgktbbyxg/edit#slide=id.p">Marketing Research - Term Project</a></h4>
+                    <p>Our student team reported on how Women's Lunch Place, a day shelter for homeless women, can increase monetary donations from volunteers.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+               	<div class="text-center">
+                  	<img class="project-img" src="images/googlenest.png"></img>	
+                  	<h2>Google Nest</h2>
+                  	<h4><a href="https://docs.google.com/presentation/d/1tRDfGltBRy5OrCbnzmkYeaVc__pXRqGdd8gqjLHPiAo/edit#slide=id.p">Marketing Management - Term Project</a></h4>
+                   	<p>Our group project focused on how Google can use its acquisition of Nest to establish a foothold in the consuummer hardware market.</p>
+               	</div>
+            </div>
+			<div class="col-sm-4">
+	        	<div class="text-center">
+	                <img class="project-img" src="images/ae.png"></img>
+	                <h2>American Eagle Outfitters</h2>
+	                <h4><a href="https://docs.google.com/presentation/d/1AJ9fOF9hJgPcCdmfFvMBjeMk1Z8TiEB86doHEhygZRc/edit#slide=id.p">Organizational Behavior - Term Project</a></h4>
+	                <p>Our group project focused on how American Eagle can improve sales.</p>
+	            </div>
+	        </div>	  
+		</div>
+		<div class ="row">   	  
+	        <div class="col-sm-4">
+                <div class="text-center">
+                    <img class="project-img" src="images/matlab.png"></img>
+                    <h2>Modeling Bacterial Growth Curve in MATLAB</h2>
+                    <h4><a href="https://docs.google.com/document/d/128-80pwLK9oAsP7SH64BFW2aMPuHXCLmy7Ccn0PxGtI/edit">Scientific Data Processing - Term Project</a></h4>
+                    <p>Our student team wrote a MATLAB program to study differences between growth curves for different temperatures.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <img class="project-img" src="images/soles.png"></img>	
+                    <h2>Soles</h2>
+                    <h4><a href="https://docs.google.com/presentation/d/18R8fG-olDW_g0dkOLAbHSC1Ltaddz4PEpRlTdlrobYY/edit#slide=id.p">Business, Culture, Society - Term Project</a></h4>
+                    <p>Our group project developed a fictitious company, Soles.</p>
+               	</div>
+            </div>
+			<div class="col-sm-4">
+	        	<div class="text-center">
+	               	<img class="project-img" src="images/lenovo.png"></img>
+	               	<h2>Lenovo</h2>
+	              	<h4><a href="https://drive.google.com/drive/search?q=lenovo">Capitalist Enterprise - Term Project</a></h4>
+	              	<p>Our group project focused on presenting Lenovo's business strategy under the pressure of globalization.</p>
+	            </div>
+	        </div>	  
+		</div>
+	</div>
+	<!--parallax-->
+	<div class="background4">
+		<div class="caption">
+			<span class="border" style="background-color:transparent;font-size:25px;color:#f7f7f7;"></span>
+		</div>
+	</div>	   
+	<!--Work Projects-->
+	<div class="container-fluid" id="workprojects" style="padding-top:80px; padding-bottom:50px; background-image: url(images/pattern2.png)">
+		<div class="row bottom-buffer">
+        	<center><h1 class="hvr-underline-from-center" style="font-size:400%; font-family: Arial; font-weight: bold;">Personal Projects</h1></center>
+    	</div>
+    	<div class="row">
+	        <div class="col-sm-4">
+	            <div class="text-center">
+	               	<img class="project-img" src="images/video.png"></img>
+                   	<h2>IFSA-Butler Unpacked: Study Abroad Student Guide</h2>
+                  	<h4><a href="http://unpacked.ifsa-butler.org/perspectives/fearless-tips-and-tricks-to-address-your-fears-of-study-abroad/">Fearless: Tips and Tricks to Calmn Your Study Abroad Jitters</a></h4>
+                   	<p>I address how to overcome some of the biggest anxieties about studying abroad</p>
+	            </div>
+			</div>
+			<div class="col-sm-4">
+	            <div class="text-center">
+	              	<img class="project-img" src="images/riomaggiore.png"></img>
+	               	<h2>IFSA-Butler Unpacked: Study Abroad Student Guide</h2>
+	               	<h4><a href="http://unpacked.ifsa-butler.org/money-matters/once-in-a-lifetime-opportunity-traveling-europe-on-a-budget/guide.com">Once in a Lifetime Opportunity:Traveling Europe on a Budget</a></h4>
+	                <p>I wrote about traveling in the winter time in Europe.</p>
+				</div>
+			</div>
+	        <div class="col-sm-4">
+	            <div class="text-center">
+	                <img class="project-img" src="images/prague.png"></img>
+	              	<h2>IFSA-Butler Unpacked: Study Abroad Student Guide</h2>
+	               	<h4><a href="http://unpacked.ifsa-butler.org/diversity-and-inclusion/racial-and-ethnic-identities/an-immigrant-abroad-a-chinese-american-in-london/">Immigrant Abroad: A Chinese-American in London</a></h4>
+	               	<p>I wrote about my experience as a Chinese-American abroad in London.</p>
+	            </div>
 			</div>
 		</div>
-		<div class="col-md-4">
-	        	<div class="text-center">
-	                	<img class="project-img" src="images/tuvalu.png"></img>
-	                    	<h2>Tuvalu</h2>
-	                    	<h4><a href="http://www.tuvalupavilion.com/2016/12/tuvalu-pavilon-at-2017-venice-biennale.html">Independent Studies 2017- Tuvalu Pavilion at 2017 Venice Biennale</a></h4>
-	                    	<p>Our student team built a website for the Tuvalu pavilion at the 2017 Venice Biennale.</p>
-	                </div>
-	        </div>	  
-	        <div class="col-md-4">
-                	<div class="text-center">
-                        	<img class="project-img" src="images/dsdm.png"></img>
-                        	<h2>Project UMass</h2>
-                        	<h4><a href="https://drive.google.com/drive/folders/0BwJ84D40V4XdaTdJVUR5UEtwODQ">Software Development Methodologies 2017 - Security Assignment</a></h4>
-                        	<p>Our student team reported on the best agile methodology to ensure that a fictitious student health database is secure.</p>
-                    	</div>
-                </div>
-                <div class="col-md-4">
-                	<div class="text-center">
-                        	<img class="project-img" src="images/requirements.png"></img>	
-                        	<h2>Requirements Analysis on Rail Ticketing System</h2>
-                        	<h4><a href="https://drive.google.com/drive/folders/0BwJ84D40V4XdaTdJVUR5UEtwODQ">Software Development Methodologies 2017 - Requirements Analysis Assignment</a></h4>
-                        	<p>I wrote about the missing and ambigious user and customer requirements.</p>
-                    	</div>
-                </div>
-		<div class="col-md-4">
-	        	<div class="text-center">
-	                	<img class="project-img" src="images/srs.png"></img>
-	                    	<h2>Project Library: Software Requirements Specifications (SRS) Document</h2>
-	                    	<h4><a href="https://drive.google.com/drive/folders/0BwJ84D40V4XdaTdJVUR5UEtwODQ">Software Development Methodologies 2017 - Term Project</a></h4>
-	                    	<p>I made a software requirements specifications (SRS) document that describes the necessary functions and capabilities of a completely integrated automated library system and detail the constraints that it must respect.</p>
-	                </div>
-	        </div>	  
-	</div>
-</div>
-
-<div class="row row-black" id="about"></div>  
-
-<!--Side Projects-->
-<div class="experience" id="sideprojects" style="padding-top:80px; padding-bottom:50px;">
-	<div class="row bottom-buffer">
-        	<center><h1 style="font-size:400%; font-family: Arial; font-weight: bold;">Side Projects</h1></center>
-    	</div>
-    	<div class="row top-buffer">
-	        <div class="col-md-4">
-	                <div class="text-center">
-	                	<img class="project-img" src="images/wander.png"></img>
-	                    	<h2>Brandeis Wander Magazine</h2>
-	                    	<h5>Photo</h5>
-	                    	<h4><a href="https://issuu.com/brandeiswander/docs/wander_issue_10_final">Brandeis Wander Online Version</a></h4>
-	                   	<p>I contributed two pictures to the magazine, one of which is on the front cover. </p>
-	                </div>
-		</div>
-		<div class="col-md-4">
-	                <div class="text-center">
-	                	<img class="nowknow-img" src="images/riomaggiore.png"></img>
-	                    	<h2>IFSA-Butler Unpacked: Study Abroad Student Guide</h2>
-	                    	<h5>International Correspondent</h5>
-	                    	<h4><a href="http://nowknowhttp://unpacked.ifsa-butler.org/money-matters/once-in-a-lifetime-opportunity-traveling-europe-on-a-budget/guide.com">Once in a Lifetime Opportunity: Traveling Europe on a Budget</a></h4>
-	                   	<p>I wrote about traveling in the winter time in Europe.</p>
+		<!--upcoming projects-->
+		<div class="row">
+	        <div class="col-sm-4">
+	            <div class="text-center">
+	               	<img class="project-img" src="images/ios.png"></img>
+                   	<h2>Tools and Technologies for Product Managers</h2>
+                   	<h5><em>Product Management | Entrepreneurship | iOS</em></h5>
+               		<h4>In Progress <a href="https://trello.com/b/xQ0ulg3X/pm-tools" target="_blank" class="social-btn">
+								<i class="fa fa-trello"></i>
+							</a></h4>
+                   	<p>A portfolio of templates that PMs utilize that can be accessed on the iOS platform.</p>
+	            </div>
+			</div>
+			<div class="col-sm-4">
+	            <div class="text-center">
+	               	<img class="project-img" src="images/ios.png"></img>
+                   	<h2>Cooking Game iOS app</h2>
+                   	<h5><em>Product Management | Entrepreneurship | iOS | 3D modeling</em></h5>
+               		<h4>In Progress <a href="https://trello.com/b/a8BOzhY7/cooking-game-ios-app" target="_blank" class="social-btn">
+								<i class="fa fa-trello"></i>
+							</a></h4>
+                   	<p>A combination of Bakery Story and Overcooked on the iOS platform.</p>
+	            </div>
+			</div>
+	        <div class="col-sm-4">
+	            <div class="text-center">
+	               	<img class="project-img" src="images/ios.png"></img>
+                   	<h2>Travel app/blog</h2>
+                   	<h5><em>Product Management | Entrepreneurship | iOS | SEO</em></h5>
+               		<h4>In Progress <a href="https://trello.com/b/ifi3ICuZ/travel-app" target="_blank" class="social-btn">
+								<i class="fa fa-trello"></i>
+							</a></h4> 
+                   	<p>A project to learn about SEO and a study of how travel apps can do better.</p>
+	            </div>
 			</div>
 		</div>
-	        <div class="col-md-4">
-	                <div class="text-center">
-	                	<img class="project-img" src="images/prague.png"></img>
-	                    	<h2>IFSA-Butler Unpacked: Study Abroad Student Guide</h2>
-	                    	<h5>International Correspondent</h5>
-	                    	<h4><a href="http://unpacked.ifsa-butler.org/diversity-and-inclusion/racial-and-ethnic-identities/an-immigrant-abroad-a-chinese-american-in-london/">Immigrant Abroad: A Chinese-American in London</a></h4>
-	                    	<p>I wrote about my experience as a Chinese-American abroad in London.</p>
-	                </div>
-		</div>
+		
 	</div>
-</div>
-
-<div class="row row-black" id="about"></div>
-
+	
+	<!--parallax-->
+	<div class="background3">
+		<div class="caption">
+			<span class="border" style="background-color:transparent;font-size:25px;color:#f7f7f7;"></span>
+		</div>
+	</div>	
 </body>	
 </html>
